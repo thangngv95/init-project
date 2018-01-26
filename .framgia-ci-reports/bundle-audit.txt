@@ -1,0 +1,13 @@
+Updating ruby-advisory-db ...
+Already up-to-date.
+Updated ruby-advisory-db
+ruby-advisory-db: 293 advisories
+Name: rubocop
+Version: 0.35.1
+Advisory: CVE-2017-8418
+Criticality: Low
+URL: https://github.com/bbatsov/rubocop/issues/4336
+Title: RuboCop: insecure use of /tmp
+Solution: upgrade to >= 0.49.0
+
+Vulnerabilities found!
