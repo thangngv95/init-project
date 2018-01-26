@@ -23,3 +23,5 @@
 /config/secrets.yml
 
 .byebug_history
+
+.framgia-ci-reports
