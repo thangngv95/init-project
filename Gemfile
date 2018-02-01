@@ -41,7 +41,7 @@ group :development, :test do
   gem "bundler-audit"
   gem "database_cleaner"
   gem "eslint-rails", git: "https://github.com/octoberstorm/eslint-rails", require: false
-  gem "factory_girl_rails"
+  gem "factory_bot_rails"
   gem "guard-rspec", require: false
   gem "jshint"
   gem "railroady"
@@ -53,6 +53,9 @@ group :development, :test do
   gem "rubocop", "~> 0.35.0", require: false
   gem "rubocop-checkstyle_formatter", require: false
   gem "scss_lint_reporter_checkstyle", require: false
+end
+group :production do
+  gem 'pg', '0.20.0'
 end
 
 group :test do
