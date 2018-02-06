@@ -1,0 +1,37 @@
+vi:
+  layouts:
+    application:
+      title: "Hướng dẫn Ruby on Rails"
+      en: "English"
+      vi: "Vietnamese"
+  static_pages:
+    home:
+      title: "Trang chủ"
+      hello: "Trang chủ"
+      b1: "Đây là Trang chủ"
+      link1: "Tài liệu Ruby on Rails"
+      b2: "ứng dụng đơn giản"
+    help:
+      title: "Trợ gíup"
+      help: "Trợ gíup"
+      b1: "Nhận sự trợ giúp về Ruby on Rails tại"
+      link1: "Tài liệu hỗ trợ Rails "
+      b2: "Gíup đỡ làm ứng dụng đơn gỉan, hãy xem trên"
+      link2: Tài liệu Ruby on Rails
+    about:
+      title: "Về chúng tôi"
+      about: "Về chúng tôi"
+      b1: " "
+      link1: "Tài liệu hướng dẫn Ruby on Rails "
+      b2: " là"
+      b3: "hay là"
+      link2: "một cuốn sách"
+      link3: "một seri "
+      b4: "dạy về phát triển web  với "
+      link4: "Ruby on Rails Tutorial"
+      b5: "Đây là 1 trang web đơn gỉan dựa vào Rails."
+    contact:
+      title: "Liên hệ"
+      contact: "Liên hệ"
+      b1: "Liên hệ với chúng tôi"
+      link1: "Liên hệ"
