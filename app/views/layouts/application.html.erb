@@ -8,9 +8,11 @@
     <%= javascript_include_tag "application",
       "data-turbolinks-track": "reload" %>
   </head>
-  <%= link_to t(".en"), locale: "en" %>
-  <%= link_to t(".vi"), locale: "vi" %>
   <body>
-    <%= yield %>
+    <%= render "layouts/header" %>
+    <div class="container">
+      <%= yield %>
+      <%= render "layouts/footer" %>
+    </div>
   </body>
 </html>

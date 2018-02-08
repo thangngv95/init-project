@@ -35,6 +35,20 @@ en:
       title: "Ruby on Rails Tutorial"
       en: "English"
       vi: "Vietnamese"
+    header:
+      title: "sample app"
+      home: "Home"
+      help: "Help"
+      login: "Log in"
+      about: "About"
+    footer:
+      b1: "The"
+      link1: "Ruby on Rails Tutorial"
+      b2: "by "
+      link2: "Michael Hartl"
+      about: "About"
+      contact: "Contact"
+      news: "News"
   static_pages:
     home:
       title: "Home"
@@ -42,6 +56,7 @@ en:
       b1: "This is Homepage"
       link1: "Ruby on Rails Tutorial"
       b2: "sample app"
+      signup: "Sign up now"
     help:
       title: "Help"
       help: "Help"
@@ -66,3 +81,8 @@ en:
       contact: "Contact"
       b1: "Contact the Ruby on Rails Tutorial about the sample app at the"
       link1: "contact page"
+  users:
+    new:
+      title: "Sign up"
+      signup: "Sign up"
+      b1: "This will be a signup page for new users."
