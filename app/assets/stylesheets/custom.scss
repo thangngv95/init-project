@@ -8,6 +8,11 @@ $light-gray: #777;
 $white: #fff;
 $gray: #555;
 $gray-darker: #222;
+$red: #f00;
+
+@mixin box-sizing {
+  box-sizing: border-box;
+}
 
 // universal
 
@@ -29,6 +34,16 @@ textarea {
   h1 {
     margin-bottom: 10px;
   }
+}
+
+// miscellaneous
+
+.debug-dump {
+  @include box-sizing;
+  clear: both;
+  float: left;
+  margin-top: 45px;
+  width: 100%;
 }
 
 // typography
@@ -109,5 +124,77 @@ footer {
       float: left;
       margin-left: 15px;
     }
+  }
+}
+// sidebar
+
+aside {
+  section {
+    margin-top: 20px;
+    padding: 10px 0;
+
+    &:first-child {
+      border: 0;
+      padding-top: 0;
+    }
+
+    .user-info {
+      margin-top: 20px;
+    }
+
+    span {
+      display: block;
+      line-height: 1;
+      margin-bottom: 3px;
+    }
+
+    h1 {
+      font-size: 1.4em;
+      letter-spacing: -1px;
+      margin-bottom: 3px;
+      margin-top: 0;
+      text-align: left;
+    }
+  }
+}
+
+.gravatar {
+  float: left;
+  margin-right: 10px;
+}
+
+.gravatar-edit {
+  margin-top: 15px;
+}
+// forms
+
+input,
+textarea,
+select,
+.uneditable-input {
+  @include box-sizing;
+  border: 1px solid $gray;
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+input {
+  height: auto;
+}
+
+.error-explanation {
+  color: $red;
+
+  ul {
+    color: $red;
+    margin: 0 0 30px;
+  }
+}
+
+.field-with-errors {
+  @extend %has-error;
+
+  .form-control {
+    color: $state-danger-text;
   }
 }

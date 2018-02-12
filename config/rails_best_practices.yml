@@ -26,7 +26,11 @@ RemoveTrailingWhitespaceCheck: { }
 RemoveUnusedMethodsInControllersCheck: {
   except_methods:
   ["StaticPagesController#home","StaticPagesController#help","StaticPagesController#about",
-  "StaticPagesController#contact","UsersController#new"]
+<<<<<<< HEAD
+  "StaticPagesController#contact"]
+=======
+  "StaticPagesController#contact","UsersController#new","UsersController#show","UsersController#create"]
+>>>>>>> ae0ca5d... chap7
 }
 RemoveUnusedMethodsInHelpersCheck: { except_methods: [] }
 RemoveUnusedMethodsInModelsCheck: { except_methods: [] }
