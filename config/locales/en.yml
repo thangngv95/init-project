@@ -41,6 +41,11 @@ en:
       help: "Help"
       login: "Log in"
       about: "About"
+      profile: "Profile"
+      setting: "Settings"
+      logout: "Log out"
+      user: "Users"
+      acc: "Account"
     footer:
       b1: "The"
       link1: "Ruby on Rails Tutorial"
@@ -98,3 +103,13 @@ en:
     error_messages:
       form: "The form contains"
       error: "error"
+  sessions:
+    new:
+      name: "Email"
+      password: "Password"
+      login: "Log in"
+      t1: "New user?"
+      signup: "Sign up now !"
+      login: "Login"
+    create:
+      invalid: "Invalid email/pasword combination"
