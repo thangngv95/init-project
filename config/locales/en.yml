@@ -85,4 +85,16 @@ en:
     new:
       title: "Sign up"
       signup: "Sign up"
-      b1: "This will be a signup page for new users."
+      submit: "Create my account"
+      name: "Name"
+      email: "Email"
+      password: "Password"
+      confirmation: "Confirmation"
+    create:
+      welcome: "Welcome to the Sample App!"
+    show:
+      falsed: "ID not found"
+  shared:
+    error_messages:
+      form: "The form contains"
+      error: "error"

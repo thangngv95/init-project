@@ -55,3 +55,17 @@ vi:
       title: "Đăng ký"
       signup: "Đăng ký"
       b1: "Đây là trang đăng ký."
+      submit: "Tạo tài khoản"
+      name: "Tên"
+      email: "Email"
+      password: "Mật khẩu"
+      confirmation: "Xác nhận mật khẩu"
+    create:
+      welcome: "Chào mừng ..."
+    show:
+      falsed: "Không tìm thấy ID"
+  shared:
+    error_messages:
+      form: "Nội dung chứa"
+      error: "Lỗi"
+
