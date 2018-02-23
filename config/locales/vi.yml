@@ -10,6 +10,11 @@ vi:
       help: "Trợ giúp"
       login: "Đăng nhập"
       about: "Về chúng tôi"
+      profile: "Trang cá nhân"
+      setting: "Cài đặt"
+      logout: "Đăng xuất"
+      user: "Người dùng"
+      acc: "Tài khoản"
     footer:
       b1: " "
       link1: " Tài liệu hướng dẫn Ruby on Rails"
@@ -68,4 +73,13 @@ vi:
     error_messages:
       form: "Nội dung chứa"
       error: "Lỗi"
-
+  sessions:
+    new:
+      name: "Email"
+      password: "Mật khẩu"
+      login: "Đăng nhập"
+      t1: "Tài khoảng mới ?"
+      signup: "Đăng ký ngay!"
+      login : "Đăng nhập"
+    create:
+      invalid: "Tài khoản email hoặc mật khẩu không đúng"
