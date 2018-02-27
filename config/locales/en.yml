@@ -110,6 +110,7 @@ en:
       login: "Log in"
       t1: "New user?"
       signup: "Sign up now !"
-      login: "Login"
+      login: "Logi
+      remember: "Remember me"
     create:
-      invalid: "Invalid email/pasword combination"
+      invalid: "Invalid email/pasword combination" 
