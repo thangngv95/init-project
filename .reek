@@ -10,3 +10,5 @@ exclude_paths:
 "app/controllers":
   UtilityFunction:
     public_methods_only: true
+TooManyMethods:
+ max_methods: 20
