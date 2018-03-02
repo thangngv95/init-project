@@ -74,7 +74,15 @@ vi:
       welcome: "Cảm ơn đa đến với ứng dụng thử nghiệm, bấm vào link sau để kích hoạt tài khoản"
       activate: "Kích hoạt"
       active_account: "Kích hoạt tài khoản"
+    password_reset:
+      password_reset: "Đặt lại mật khẩu"
+      title: "Bấm vào link sau để đặ lại mật khẩu"
+      reset: "Đặt lại mật khẩu"
+      body1: "Link đặt lại mật khẩu chỉ có thời hạn là 2 giờ."
+      body2: "Nếu không phải bạn yêu cầu đặt lại mật khẩu, xin hãy bỏ qua email này."
   users:
+    index:
+      please: "Xin hãy đăng nhập !!!!!!!!"
     form:
       signup: "Đăng ký"
       b1: "Đây là trang đăng ký."
@@ -121,11 +129,12 @@ vi:
       signup: "Đăng ký ngay!"
       login : "Đăng nhập"
       remember: "Nhớ mật khẩu"
+      forgot: "Quên mật khẩu"
     create:
       invalid: "Tài khoản email hoặc mật khẩu không đúng"
       account_not_active: "Tài khoản chưa được kích hoạt."
       check: "Kiểm tra mail kích hoạt tài khoản"
-      welcome_back: "Bạn đã trở lại,"
+      welcome_back: "Bạn đã trở lại "
   mailers:
     users_mailer:
       act: "Kích hoạt tài khoản"
@@ -135,3 +144,22 @@ vi:
       activate: "Kích hoạt tài khoản thành công"
       in_activate: "Chưa được kích hoạt tài khoản"
   please: "Xin hãy đăng nhập"
+  password_resets:
+    create:
+      email_sent: "Email đặt lại mật khẩu đã được gửi"
+      not_found: "Địa chỉ email không được tìm thấy"
+    update:
+      empty: "Không được để rỗng"
+      reset: "Mật khẩu đã được đặt lại"
+    edit:
+      expired: "mail đặt lại mật khẩu đã hết hạn"
+      falsed: "Không tìm thấy người dùng"
+    new:
+      title: "Quên mật khẩu"
+      email: "Email"
+      submit: "Gửi"
+    edit:
+      title: "Đặt lại mật khẩu"
+      password: "Mật khẩu"
+      confirmation: "Xác thực mật khẩu"
+      submit: "Cập nhật"

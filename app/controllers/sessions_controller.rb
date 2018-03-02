@@ -25,7 +25,7 @@ class SessionsController < ApplicationController
 
   def login_success
     log_in user
-    flash[:info] = t ".welcome_back"
+    flash[:info] = t(".welcome_back") + user.name
     session_params[:remember_me] == "1" ? remember(user) : forget(user)
     redirect_back_or user
   end
