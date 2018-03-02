@@ -30,11 +30,21 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
+  activerecord:
+    errors:
+      messages:
+        blank: "must not be empty"
+        invalid: "incorrect!"
+        confirmation: "incorrect!"
+        too_short: "too short"
+        taken: " email is exist"
+  helpers:
+    submit:
+      create: Sign up
+      update: Update
   layouts: 
     application: 
       title: "Ruby on Rails Tutorial"
-      en: "English"
-      vi: "Vietnamese"
     header:
       title: "sample app"
       home: "Home"
@@ -46,6 +56,8 @@ en:
       logout: "Log out"
       user: "Users"
       acc: "Account"
+      en: "English"
+      vi: "Vietnamese"
     footer:
       b1: "The"
       link1: "Ruby on Rails Tutorial"
@@ -87,22 +99,40 @@ en:
       b1: "Contact the Ruby on Rails Tutorial about the sample app at the"
       link1: "contact page"
   users:
-    new:
+    form:
       title: "Sign up"
       signup: "Sign up"
-      submit: "Create my account"
       name: "Name"
       email: "Email"
       password: "Password"
       confirmation: "Confirmation"
+    new:
+      signup: "Sign up"
     create:
       welcome: "Welcome to the Sample App!"
+    update:
+      profile: "Profile updated"
     show:
       falsed: "ID not found"
+    edit:
+      title: "Update information"
+      signup: "Update information"
+      change: "Change"
+      please: "Please login !"
+    user:
+      c: " "
+      d: "|"
+      del: "Delete"
+      sure: "You sure ?"
+    destroy:
+      del: "Delete"
+    index:
+      all: "All users"
   shared:
     error_messages:
       form: "The form contains"
       error: "error"
+      submit: "have"
   sessions:
     new:
       name: "Email"
