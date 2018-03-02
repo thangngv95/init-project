@@ -5,7 +5,7 @@
   <%= link_to user.name, user %>
   <%= link_to t".d" %>
   <% if current_user.admin? && !user.current_user?(current_user) %>
-    <%= link_to t(".del"), user, method: :delete,
+    <%= link_to t(".delete"), user, method: :delete,
      data: {confirm: t(".sure")} %>
   <% end %>
 </li>
