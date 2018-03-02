@@ -111,5 +111,6 @@ en:
       t1: "New user?"
       signup: "Sign up now !"
       login: "Login"
+      remember: "Remember me"
     create:
       invalid: "Invalid email/pasword combination"
