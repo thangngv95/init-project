@@ -30,11 +30,21 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
+  activerecord:
+    errors:
+      messages:
+        blank: "must not be empty"
+        invalid: "incorrect!"
+        confirmation: "incorrect!"
+        too_short: "too short"
+        taken: " email is exist"
+  helpers:
+    submit:
+      create: Sign up
+      update: Update
   layouts: 
     application: 
       title: "Ruby on Rails Tutorial"
-      en: "English"
-      vi: "Vietnamese"
     header:
       title: "sample app"
       home: "Home"
@@ -46,6 +56,8 @@ en:
       logout: "Log out"
       user: "Users"
       acc: "Account"
+      en: "English"
+      vi: "Vietnamese"
     footer:
       b1: "The"
       link1: "Ruby on Rails Tutorial"
@@ -86,23 +98,53 @@ en:
       contact: "Contact"
       b1: "Contact the Ruby on Rails Tutorial about the sample app at the"
       link1: "contact page"
+  user_mailer:
+    account_activation:
+      app: "Sample App"
+      hi: "Hi"
+      welcome: "Welcome to the Sample App! Click on the link below to activate your account:"
+      activate: "Activate!"
+      active_account: "Active account"
   users:
-    new:
+    index:
+      please: "Please login !!!!!!!!"
+    form:
       title: "Sign up"
       signup: "Sign up"
-      submit: "Create my account"
       name: "Name"
       email: "Email"
       password: "Password"
       confirmation: "Confirmation"
+    new:
+      title: "Sign up"
+      signup: "Sign up"
     create:
-      welcome: "Welcome to the Sample App!"
+      please: "Please check your email to activate your account."
+    update:
+      profile: "Profile updated"
     show:
       falsed: "ID not found"
+    edit:
+      title: "Update information"
+      signup: "Update information"
+      change: "Change"
+      please: "Please login !"
+      in_act: "Invalid activation link"
+      act: "Account activated!"
+    user:
+      c: " "
+      d: "|"
+      delete: "Delete"
+      sure: "You sure ?"
+    destroy:
+      delete: "Delete"
+    index:
+      all: "All users"
   shared:
     error_messages:
       form: "The form contains"
       error: "error"
+      submit: "have"
   sessions:
     new:
       name: "Email"
@@ -114,3 +156,16 @@ en:
       remember: "Remember me"
     create:
       invalid: "Invalid email/pasword combination"
+      acount_not_active: "Account not activated."
+      check: "Check your email for the activation link."
+      welcome_back: "Welcome back"
+  mailers:
+    users_mailer:
+      act: "Account active"
+      hi: "Hi"
+  account_activations:
+    edit:
+      activate: "Account active"
+      in_activate: "Invaild account active !"
+  please: "Please log in !!!!!!!!"
+
