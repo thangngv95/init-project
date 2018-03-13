@@ -1,9 +1,19 @@
 vi:
+  activerecord:
+    errors:
+      messages:
+        blank: "không được để trống"
+        invalid: "không đúng"
+        confirmation: "Xác nhận không chính xác"
+        too_short: "mật khẩu không chính xác"
+        taken: " đã tồn tại"
+  helpers:
+    submit:
+      create: Đăng ký
+      update: Cập nhật
   layouts:
     application:
       title: "Hướng dẫn Ruby on Rails"
-      en: "English"
-      vi: "Vietnamese"
     header:
       title: "sample app"
       home: "Trang chủ"
@@ -15,6 +25,8 @@ vi:
       logout: "Đăng xuất"
       user: "Người dùng"
       acc: "Tài khoản"
+      en: "English"
+      vi: "Vietnamese"
     footer:
       b1: " "
       link1: " Tài liệu hướng dẫn Ruby on Rails"
@@ -56,23 +68,41 @@ vi:
       b1: "Liên hệ với chúng tôi"
       link1: "Liên hệ"
   users:
-    new:
-      title: "Đăng ký"
+    form:
       signup: "Đăng ký"
       b1: "Đây là trang đăng ký."
-      submit: "Tạo tài khoản"
       name: "Tên"
       email: "Email"
       password: "Mật khẩu"
       confirmation: "Xác nhận mật khẩu"
+    new:
+      title: "Đăng ký"
+      signup: "Đăng ký"
     create:
       welcome: "Chào mừng ..."
+    update:
+      profile_updated: "Trang cá nhân đã được cập nhật"
     show:
       falsed: "Không tìm thấy ID"
+    edit:
+      title: "Cập nhật thông tin"
+      signup: "Cập nhật thông tin"
+      change: "Thay đổi"
+      please: "Xin hay đăng nhập !"
+    user:
+      c: " "
+      d: "|"
+      del: "Xóa"
+      sure: "Bạn chắc chứ ?"
+    destroy:
+      del: "Xóa"
+    index:
+      all: "Toàn bộ người dùng"
   shared:
     error_messages:
       form: "Nội dung chứa"
-      error: "Lỗi"
+      error: "lỗi"
+      submit: "Có"
   sessions:
     new:
       name: "Email"
