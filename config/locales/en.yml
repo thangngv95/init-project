@@ -98,6 +98,13 @@ en:
       contact: "Contact"
       b1: "Contact the Ruby on Rails Tutorial about the sample app at the"
       link1: "contact page"
+  user_mailer:
+    account_activation:
+      app: "Sample App"
+      hi: "Hi"
+      welcome: "Welcome to the Sample App! Click on the link below to activate your account:"
+      activate: "Activate!"
+      active_account: "Active account"
   users:
     form:
       title: "Sign up"
@@ -107,9 +114,10 @@ en:
       password: "Password"
       confirmation: "Confirmation"
     new:
+      title: "Sign up"
       signup: "Sign up"
     create:
-      welcome: "Welcome to the Sample App!"
+      please: "Please check your email to activate your account."
     update:
       profile: "Profile updated"
     show:
@@ -119,13 +127,15 @@ en:
       signup: "Update information"
       change: "Change"
       please: "Please login !"
+      in_act: "Invalid activation link"
+      act: "Account activated!"
     user:
       c: " "
       d: "|"
-      del: "Delete"
+      delete: "Delete"
       sure: "You sure ?"
     destroy:
-      del: "Delete"
+      delete: "Delete"
     index:
       all: "All users"
   shared:
@@ -144,3 +154,15 @@ en:
       remember: "Remember me"
     create:
       invalid: "Invalid email/pasword combination"
+      acount_not_active: "Account not activated."
+      check: "Check your email for the activation link."
+      welcome_back: "Welcome back"
+  mailers:
+    users_mailer:
+      act: "Account active"
+      hi: "Hi"
+  account_activations:
+    edit:
+      activate: "Account active"
+      in_activate: "Invaild account active !"
+  please: "Please log in !!!!!!!!"

@@ -67,6 +67,13 @@ vi:
       contact: "Liên hệ"
       b1: "Liên hệ với chúng tôi"
       link1: "Liên hệ"
+  user_mailer:
+    account_activation:
+      app: "ứng dụng thử nghiệm"
+      hi: "XIn chào,"
+      welcome: "Cảm ơn đa đến với ứng dụng thử nghiệm, bấm vào link sau để kích hoạt tài khoản"
+      activate: "Kích hoạt"
+      active_account: "Kích hoạt tài khoản"
   users:
     form:
       signup: "Đăng ký"
@@ -79,7 +86,7 @@ vi:
       title: "Đăng ký"
       signup: "Đăng ký"
     create:
-      welcome: "Chào mừng ..."
+      please: "Xin hãy  kích hoạt tài khoản tại mail"
     update:
       profile_updated: "Trang cá nhân đã được cập nhật"
     show:
@@ -89,13 +96,15 @@ vi:
       signup: "Cập nhật thông tin"
       change: "Thay đổi"
       please: "Xin hay đăng nhập !"
+      in_act: "Tài khoản chưa được kích hoạt"
+      act: "Kích hoạt thành công!"
     user:
       c: " "
       d: "|"
-      del: "Xóa"
+      delete: "Xóa"
       sure: "Bạn chắc chứ ?"
     destroy:
-      del: "Xóa"
+      delete: "Xóa"
     index:
       all: "Toàn bộ người dùng"
   shared:
@@ -114,3 +123,15 @@ vi:
       remember: "Nhớ mật khẩu"
     create:
       invalid: "Tài khoản email hoặc mật khẩu không đúng"
+      account_not_active: "Tài khoản chưa được kích hoạt."
+      check: "Kiểm tra mail kích hoạt tài khoản"
+      welcome_back: "Bạn đã trở lại,"
+  mailers:
+    users_mailer:
+      act: "Kích hoạt tài khoản"
+      hi: "Xin chào"
+  account_activations:
+    edit:
+      activate: "Kích hoạt tài khoản thành công"
+      in_activate: "Chưa được kích hoạt tài khoản"
+  please: "Xin hãy đăng nhập"
