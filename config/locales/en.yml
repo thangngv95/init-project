@@ -40,8 +40,8 @@ en:
         taken: " email is exist"
   helpers:
     submit:
-      create: Sign up
-      update: Update
+      create: "Sign up"
+      update: "Update"
   layouts: 
     application: 
       title: "Ruby on Rails Tutorial"
@@ -102,10 +102,20 @@ en:
     account_activation:
       app: "Sample App"
       hi: "Hi"
-      welcome: "Welcome to the Sample App! Click on the link below to activate your account:"
+      welcome: "Welcome to the Sample App!
+       Click on the link below to activate your account:"
       activate: "Activate!"
       active_account: "Active account"
+    password_reset:
+      password_reset: "Password reset"
+      title: "To reset your password click the link below:"
+      reset: "Reset password"
+      body1: "This link will expire in two hours."
+      body2: "If you did not request your password to be reset,
+       please ignore this email and your password will stay as it is."
   users:
+    index:
+      please: "Please login !!!!!!!!"
     form:
       title: "Sign up"
       signup: "Sign up"
@@ -152,6 +162,7 @@ en:
       signup: "Sign up now !"
       login: "Login"
       remember: "Remember me"
+      forgot: "forget password"
     create:
       invalid: "Invalid email/pasword combination"
       acount_not_active: "Account not activated."
@@ -166,3 +177,24 @@ en:
       activate: "Account active"
       in_activate: "Invaild account active !"
   please: "Please log in !!!!!!!!"
+  password_resets:
+    create:
+      email_sent: "Email sent with password reset instructions"
+      not_found: "email address not found"
+    update:
+      empty: "can't be empty"
+      reset: "password has been reset"
+    edit:
+      expired: "password reset has expired"
+      falsed: "Id not found"
+    new:
+      title: "Forgot password"
+      email: "Email"
+      submit: "Send"
+    edit:
+      title: "Reset password"
+      password: "Password"
+      confirmation: "Password confirmation"
+      submit: "Update"
+    show:
+      falsed: "ID not found"
