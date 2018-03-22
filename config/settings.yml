@@ -8,3 +8,7 @@ size:
   maxium: 50
 per_page:
   maximum: 10
+length:
+  maximum: 140
+max_picture:
+  maximum: 5

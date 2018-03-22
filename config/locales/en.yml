@@ -38,6 +38,14 @@ en:
         confirmation: "incorrect!"
         too_short: "too short"
         taken: " email is exist"
+    attributes:
+      user:
+        email: "Email"
+        name: "User Name"
+        password: "Password"
+        password_confirmation: "Confirmation"
+      micropost:
+        picture: "choose"
   helpers:
     submit:
       create: "Sign up"
@@ -74,6 +82,7 @@ en:
       link1: "Ruby on Rails Tutorial"
       b2: "sample app"
       signup: "Sign up now"
+      micropost_feed: "New Feed"
     help:
       title: "Help"
       help: "Help"
@@ -132,6 +141,7 @@ en:
       profile: "Profile updated"
     show:
       falsed: "ID not found"
+      microposts: "Microposts"
     edit:
       title: "Update information"
       signup: "Update information"
@@ -153,6 +163,12 @@ en:
       form: "The form contains"
       error: "error"
       submit: "have"
+    user_info:
+      view_profile: "View my profile"
+      micropost: "Micropost"
+    micropost_form:
+      compose: "Compose new micropost..."
+      post: "Post"
   sessions:
     new:
       name: "Email"
@@ -177,6 +193,7 @@ en:
       activate: "Account active"
       in_activate: "Invaild account active !"
   please: "Please log in !!!!!!!!"
+  alert: "maximum file size is 5MB. Please choose a smaller file."
   password_resets:
     create:
       email_sent: "Email sent with password reset instructions"
@@ -198,3 +215,27 @@ en:
       submit: "Update"
     show:
       falsed: "ID not found"
+  microposts:
+    create:
+      micropost_created: "Post success!"
+    destroy:
+      micropost_deleted: "Post Delete !"
+    micropost:
+      delete: "delete"
+      sure: "You sure?"
+      post: "Posted"
+      ago: "ago"
+  datetime:
+    distance_in_words:
+      x_minutes:
+        one: "1 minutes"
+        other: "%{count} minutes"
+      about_x_hours:
+        one: "about 1 hours"
+        other: "about %{count} hours"
+      less_than_x_minutes:
+        one: "less than 1 minutes"
+        other: "less than %{count} minutes"
+      x_days:
+        one: "1 days"
+        other: "%{count} days"

@@ -7,6 +7,14 @@ vi:
         confirmation: "Xác nhận không chính xác"
         too_short: "mật khẩu không chính xác"
         taken: " đã tồn tại"
+    attributes:
+      user:
+        email: "Email"
+        name: "Tên"
+        password: "Mật khẩu"
+        password_confirmation: "Xác nhận mật khẩu"
+      micropost:
+        picture: "Hình ảnh"
   helpers:
     submit:
       create: Đăng ký
@@ -43,6 +51,7 @@ vi:
       link1: "Tài liệu Ruby on Rails"
       b2: "ứng dụng đơn giản"
       signup: "Đăng ký ngay"
+      micropost_feed: "Tin mới"
     help:
       title: "Trợ gíup"
       help: "Trợ gíup"
@@ -99,6 +108,7 @@ vi:
       profile_updated: "Trang cá nhân đã được cập nhật"
     show:
       falsed: "Không tìm thấy ID"
+      microposts: "Bài viết đã đăng"
     edit:
       title: "Cập nhật thông tin"
       signup: "Cập nhật thông tin"
@@ -120,6 +130,12 @@ vi:
       form: "Nội dung chứa"
       error: "lỗi"
       submit: "Có"
+    user_info:
+      view_profile: "Trang cá nhân"
+      micropost: "bài đăng"
+    micropost_form:
+      compose: "Nhập nội dung bài viết ..."
+      post: "Đăng bài"
   sessions:
     new:
       name: "Email"
@@ -144,6 +160,7 @@ vi:
       activate: "Kích hoạt tài khoản thành công"
       in_activate: "Chưa được kích hoạt tài khoản"
   please: "Xin hãy đăng nhập"
+  alert: "dung lượng lớn nhât của file là 5 MB. Xin hãy chọn file nhỏ hơn"
   password_resets:
     create:
       email_sent: "Email đặt lại mật khẩu đã được gửi"
@@ -163,3 +180,27 @@ vi:
       password: "Mật khẩu"
       confirmation: "Xác thực mật khẩu"
       submit: "Cập nhật"
+  microposts:
+    create:
+      micropost_created: "Đăng bài thành công !"
+    destroy:
+      micropost_deleted: "Đã xóa bài đăng !"
+    micropost:
+      delete: "Xóa"
+      sure: "Bạn có chắc chắn không?"
+      post: "Đăng bài"
+      ago: "trước"
+  datetime:
+    distance_in_words:
+      x_minutes:
+        one: "1 phút"
+        other: "%{count} phút"
+      about_x_hours:
+        one: "khoảng 1 giờ"
+        other: "khoảng %{count} giờ"
+      less_than_x_minutes:
+        one: "chưa tới 1 phút"
+        other: "chưa tới %{count} phút"
+      x_days:
+        one: "1 ngày"
+        other: "%{count} ngày"
