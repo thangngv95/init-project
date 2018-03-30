@@ -28,7 +28,7 @@ RemoveUnusedMethodsInControllersCheck: {
   ["StaticPagesController#home","StaticPagesController#help","StaticPagesController#about",
   "StaticPagesController#contact","UsersController#new", "UsersController#show","UsersController#create",
   "UsersController#edit","UsersController#update","SessionsController#create",
-  "SessionsController#destroy", "PasswordResetsController#create"]
+  "SessionsController#destroy", "PasswordResetsController#create", MicropostsController#create]
 }
 RemoveUnusedMethodsInHelpersCheck: { except_methods: [] }
 RemoveUnusedMethodsInModelsCheck: { except_methods: [] }

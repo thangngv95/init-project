@@ -1,6 +1,7 @@
 class UsersController < ApplicationController
   attr_reader :user
 
+  before_action :logged_in_user, only: %i(:index, :edit, :update, :destroy)
   before_action :logged_in_user, only: %i(index edit update destroy)
   before_action :find_user, only: %i(show edit update destroy)
   before_action :correct_user, only: %i(edit update)
@@ -28,8 +29,7 @@ class UsersController < ApplicationController
   end
 
   def show
-    return unless user.activated?
-    redirect_to root_url
+    @microposts = user.microposts.paginate page: params[:page]
   end
 
   def edit; end
