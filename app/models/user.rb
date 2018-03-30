@@ -1,6 +1,15 @@
 class User < ApplicationRecord
   attr_reader :remember_token, :activation_token, :reset_token
   has_many :microposts, dependent: :destroy
+<<<<<<< 50cd71ea67d7dafd55daf3e217e709409141de5d
+=======
+  has_many :active_relationships, class_name: "Relationship",
+    foreign_key: "follower_id", dependent: :destroy
+  has_many :passive_relationships, class_name: "Relationship",
+    foreign_key: "followed_id", dependent: :destroy
+  has_many :following, through: :active_relationships, source: :followed
+  has_many :followers, through: :passive_relationships, source: :follower
+>>>>>>> chap12
 
   VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
 
@@ -35,7 +44,11 @@ class User < ApplicationRecord
   end
 
   def feed
+<<<<<<< 50cd71ea67d7dafd55daf3e217e709409141de5d
     microposts.desc
+=======
+    Micropost.following_ids(self).desc
+>>>>>>> chap12
   end
 
   def remember
@@ -79,6 +92,21 @@ class User < ApplicationRecord
     reset_sent_at < 2.hours.ago
   end
 
+<<<<<<< 50cd71ea67d7dafd55daf3e217e709409141de5d
+=======
+  def follow other_user
+    following << other_user
+  end
+
+  def unfollow other_user
+    following.delete other_user
+  end
+
+  def following? other_user
+    following.include? other_user
+  end
+
+>>>>>>> chap12
   private
 
   def downcase_email

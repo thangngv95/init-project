@@ -1,6 +1,11 @@
 class UsersController < ApplicationController
   attr_reader :user
+<<<<<<< 50cd71ea67d7dafd55daf3e217e709409141de5d
 
+=======
+  before_action :logged_in_user, only: %i(:index, :edit, :update, :destroy,
+    :following, :followers)
+>>>>>>> chap12
   before_action :logged_in_user, only: %i(:index, :edit, :update, :destroy)
   before_action :logged_in_user, only: %i(index edit update destroy)
   before_action :find_user, only: %i(show edit update destroy)
@@ -47,6 +52,20 @@ class UsersController < ApplicationController
     user.destroy
     flash[:success] = t ".delete"
     redirect_to users_url
+  end
+
+  def following
+    @title = "Following"
+    @user = User.find params[:id]
+    @users = user.following.paginate page: params[:page]
+    render "show_follow"
+  end
+
+  def followers
+    @title = "Followers"
+    @user = User.find params[:id]
+    @users = user.followers.paginate page: params[:page]
+    render "show_follow"
   end
 
   private
