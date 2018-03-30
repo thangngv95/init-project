@@ -6,15 +6,12 @@ class Micropost < ApplicationRecord
   validate :picture_size, :user
 
   scope :desc, ->{order created_at: :desc}
-<<<<<<< 50cd71ea67d7dafd55daf3e217e709409141de5d
-=======
   scope :following_ids, (lambda do |user|
     following_ids = "SELECT followed_id FROM relationships
       WHERE follower_id = :user_id"
     where "user_id IN (#{following_ids}) OR user_id = :user_id",
       user_id: user.id
   end)
->>>>>>> chap12
 
   mount_uploader :picture, PictureUploader
 

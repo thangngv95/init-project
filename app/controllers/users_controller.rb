@@ -1,11 +1,8 @@
 class UsersController < ApplicationController
   attr_reader :user
-<<<<<<< 50cd71ea67d7dafd55daf3e217e709409141de5d
 
-=======
   before_action :logged_in_user, only: %i(:index, :edit, :update, :destroy,
     :following, :followers)
->>>>>>> chap12
   before_action :logged_in_user, only: %i(:index, :edit, :update, :destroy)
   before_action :logged_in_user, only: %i(index edit update destroy)
   before_action :find_user, only: %i(show edit update destroy)
