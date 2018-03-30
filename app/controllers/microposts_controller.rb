@@ -22,6 +22,18 @@ class MicropostsController < ApplicationController
     redirect_to request.referrer || root_url
   end
 
+  def upvote 
+    @link = Micropost.find(params[:id])
+    @link.upvote_by current_user
+    redirect_to root_url
+  end  
+
+  def downvote
+    @link = Micropost.find(params[:id])
+    @link.downvote_by current_user
+    redirect_to root_url
+  end
+
   private
 
   def micropost_params

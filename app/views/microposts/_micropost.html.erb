@@ -11,5 +11,13 @@
       <%= link_to t(".delete"), micropost, method: :delete,
         data: { confirm: t(".sure") } %>
     <% end %>
+    <%= link_to like_micropost_path(micropost), method: :put do %>
+      Like
+      <%= micropost.get_upvotes.size %>
+    <% end %>
+    <%= link_to dislike_micropost_path(micropost), method: :put do %>
+      Dislike
+      <%= micropost.get_downvotes.size %>
+    <% end %>
   </span><br />
 </li>
