@@ -31,7 +31,7 @@ class UsersController < ApplicationController
   end
 
   def show
-    @microposts = user.microposts.paginate page: params[:page]
+    @microposts = user.microposts.desc.paginate page: params[:page]
   end
 
   def edit; end
