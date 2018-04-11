@@ -194,6 +194,14 @@ en:
       in_activate: "Invaild account active !"
   please: "Please log in !!!!!!!!"
   alert: "maximum file size is 5MB. Please choose a smaller file."
+  follow: "Follow"
+  unfollow: "Unfollow"
+  following: "following"
+  followers: "followers"
+  profile: "Trang cá nhân"
+  will_paginate:
+    previous_label: "Previous"
+    next_label: "Next"
   password_resets:
     create:
       email_sent: "Email sent with password reset instructions"
