@@ -161,6 +161,14 @@ vi:
       in_activate: "Chưa được kích hoạt tài khoản"
   please: "Xin hãy đăng nhập"
   alert: "dung lượng lớn nhât của file là 5 MB. Xin hãy chọn file nhỏ hơn"
+  follow: "Theo dõi"
+  unfollow: "Bỏ theo dõi"
+  following: "đang theo dõi"
+  followers: "Người theo dõi"
+  profile: "view my profile"
+  will_paginate:
+    previous_label: "Trang trước"
+    next_label: "Trang sau"
   password_resets:
     create:
       email_sent: "Email đặt lại mật khẩu đã được gửi"
