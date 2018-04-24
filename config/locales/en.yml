@@ -198,7 +198,13 @@ en:
   unfollow: "Unfollow"
   following: "following"
   followers: "followers"
-  profile: "Trang cá nhân"
+  profile: "View my profile"
+  delete: "delete"
+  sure: "You sure?"
+  post: "Posted"
+  ago: "ago"
+  new_comment: Add comment ...
+
   will_paginate:
     previous_label: "Previous"
     next_label: "Next"
@@ -228,11 +234,6 @@ en:
       micropost_created: "Post success!"
     destroy:
       micropost_deleted: "Post Delete !"
-    micropost:
-      delete: "delete"
-      sure: "You sure?"
-      post: "Posted"
-      ago: "ago"
   datetime:
     distance_in_words:
       x_minutes:
