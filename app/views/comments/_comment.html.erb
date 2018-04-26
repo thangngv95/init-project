@@ -1,15 +1,27 @@
 <li id="coment-<%= comment.id%>">
-	<span class="content post">
-		<%= link_to comment.user.name, comment.user %>
-	</span>
-	<span class="content post">
-		<%= comment.content%>
-	</span>
-	<span class="timestamp">
-	    <%= t"post"%> <%=time_ago_in_words(comment.created_at) %> <%= t"ago" %>
-		<% if comment.user.current_user? current_user %>
-			<%= link_to t("delete"), comment, method: :delete,
-			 data: { confirm: t("sure") } %>
-		<% end %>
-	</span>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-1">
+      <div>
+        <%= link_to gravatar_for(comment.user, size: 50), comment.user %>
+      </div>
+    </div><!-- /col-sm-1 -->
+    <div class="col-sm-5">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <strong><%= link_to comment.user.name, comment.user %></strong> 
+          <span class="text-muted">
+            <%= t"post"%> <%=time_ago_in_words(comment.created_at) %> <%= t"ago" %>
+            <% if comment.user.current_user? current_user %>
+              <%= link_to t("delete"), comment, method: :delete,
+              data: { confirm: t("sure") } %>
+           <% end %>
+          </span>
+        </div>
+      <div class="panel-body">
+        <%= comment.content%>
+      </div><!-- /panel-body -->
+    </div><!-- /panel panel-default -->
+  </div><!-- /col-sm-5 -->
 </li>
