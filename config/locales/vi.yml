@@ -23,7 +23,7 @@ vi:
     application:
       title: "Hướng dẫn Ruby on Rails"
     header:
-      title: "sample app"
+      title: "DNU Forum"
       home: "Trang chủ"
       help: "Trợ giúp"
       login: "Đăng nhập"
@@ -36,20 +36,14 @@ vi:
       en: "English"
       vi: "Vietnamese"
     footer:
-      b1: " "
-      link1: " Tài liệu hướng dẫn Ruby on Rails"
-      b2: " được viết bởi "
-      link2: "Michael Hartl"
       about: "Về chúng tôi"
       contact: "Liên hệ"
       news: "Tin tức"
   static_pages:
     home:
       title: "Trang chủ"
-      hello: "Trang chủ"
-      b1: "Đây là Trang chủ"
-      link1: "Tài liệu Ruby on Rails"
-      b2: "ứng dụng đơn giản"
+      hello: "DNU Forum"
+      b1: "Diễn đàn chia sẻ kiến thức, thông tin"
       signup: "Đăng ký ngay"
       micropost_feed: "Tin mới"
     help:

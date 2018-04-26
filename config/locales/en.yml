@@ -54,7 +54,7 @@ en:
     application: 
       title: "Ruby on Rails Tutorial"
     header:
-      title: "sample app"
+      title: "DNU Forum"
       home: "Home"
       help: "Help"
       login: "Log in"
@@ -67,20 +67,14 @@ en:
       en: "English"
       vi: "Vietnamese"
     footer:
-      b1: "The"
-      link1: "Ruby on Rails Tutorial"
-      b2: "by "
-      link2: "Michael Hartl"
       about: "About"
       contact: "Contact"
       news: "News"
   static_pages:
     home:
       title: "Home"
-      hello: "Home"
-      b1: "This is Homepage"
-      link1: "Ruby on Rails Tutorial"
-      b2: "sample app"
+      hello: "DNU Forum"
+      b1: "Forum sharing knowledge, information"
       signup: "Sign up now"
       micropost_feed: "New Feed"
     help:
@@ -88,7 +82,7 @@ en:
       help: "Help"
       b1: "Get help on the Ruby on Rails Tutorial at the"
       link1: "Rails Tutorial help section"
-      b2: "To get help on this sample app, see the"
+      b2: "To get help on this DNU Forum, see the"
       link2: Ruby on Rails Tutorial
     about:
       title: "About"
@@ -101,17 +95,17 @@ en:
       link3: "screencast series"
       b4: "to teach web development with"
       link4: "Ruby on Rails Tutorial"
-      b5: "This is the sample application for the tutorial."
+      b5: "This is the DNU Forumlication for the tutorial."
     contact:
       title: "Contact"
       contact: "Contact"
-      b1: "Contact the Ruby on Rails Tutorial about the sample app at the"
+      b1: "Contact the Ruby on Rails Tutorial about the DNU Forum at the"
       link1: "contact page"
   user_mailer:
     account_activation:
-      app: "Sample App"
+      app: "DNU Forum"
       hi: "Hi"
-      welcome: "Welcome to the Sample App!
+      welcome: "Welcome to the DNU Forum!
        Click on the link below to activate your account:"
       activate: "Activate!"
       active_account: "Active account"
