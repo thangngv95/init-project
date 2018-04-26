@@ -24,7 +24,10 @@ Rails.application.routes.draw do
         put "like", to: "microposts#upvote"
         put "dislike", to: "microposts#downvote"
       end
+
+      resources :comments
     end
+    resources :comments
     resources :account_activations, only: :edit
     resources :password_resets, only: [:new, :create, :edit, :update]
     resources :microposts, only: [:create, :destroy]

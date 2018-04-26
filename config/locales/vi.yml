@@ -166,6 +166,12 @@ vi:
   following: "đang theo dõi"
   followers: "Người theo dõi"
   profile: "view my profile"
+  delete: "Xóa"
+  sure: "Bạn có chắc chắn không?"
+  post: "Đăng bài"
+  ago: "trước"
+  new_comment: Bình luận ...
+
   will_paginate:
     previous_label: "Trang trước"
     next_label: "Trang sau"
@@ -193,11 +199,7 @@ vi:
       micropost_created: "Đăng bài thành công !"
     destroy:
       micropost_deleted: "Đã xóa bài đăng !"
-    micropost:
-      delete: "Xóa"
-      sure: "Bạn có chắc chắn không?"
-      post: "Đăng bài"
-      ago: "trước"
+      
   datetime:
     distance_in_words:
       x_minutes:

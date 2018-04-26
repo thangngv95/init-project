@@ -6,11 +6,13 @@
     <%= image_tag micropost.picture.url if micropost.picture? %>
   </span>
   <span class="timestamp">
-    <%= t".post"%> <%= time_ago_in_words micropost.created_at %> <%= t".ago" %>.
+    <%= t"post"%> <%= time_ago_in_words micropost.created_at %> <%= t"ago" %>.
     <% if micropost.user.current_user? current_user %>
-      <%= link_to t(".delete"), micropost, method: :delete,
-        data: { confirm: t(".sure") } %>
+      <%= link_to t("delete"), micropost, method: :delete,
+        data: { confirm: t("sure") } %>
     <% end %>
+  </span>
+  <span>
     <%= link_to like_micropost_path(micropost), method: :put do %>
       Like
       <%= micropost.get_upvotes.size %>
@@ -19,5 +21,17 @@
       Dislike
       <%= micropost.get_downvotes.size %>
     <% end %>
-  </span><br />
+  </span>
+  <span>
+  <ul id="comments_<%=micropost.id %>">
+    <% if micropost.comments.any? %>
+      <%= render micropost.comments %>
+    <% end %>
+  </ul>
+  </span>
+  <span>
+    <% if current_user.following?(micropost.user) || current_user %>
+      <%= render "shared/comment_form", micropost: micropost %>
+    <% end %>
+  </span>
 </li>
