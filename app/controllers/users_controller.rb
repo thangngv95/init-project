@@ -8,10 +8,11 @@ class UsersController < ApplicationController
   before_action :find_user, only: %i(show edit update destroy)
   before_action :correct_user, only: %i(edit update)
   before_action :admin_user, only: %i(destroy)
+  before_action :index
 
   def index
-    @users = User.activated.paginate page: params[:page],
-     per_page: Settings.per_page.maximum
+    @q = User.ransack(params[:q])
+    @users = @q.result.paginate(page: params[:page], per_page: 20)
   end
 
   def new
@@ -63,6 +64,10 @@ class UsersController < ApplicationController
     @user = User.find params[:id]
     @users = user.followers.paginate page: params[:page]
     render "show_follow"
+  end
+
+  def set_search
+    
   end
 
   private

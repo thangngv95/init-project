@@ -1,8 +1,12 @@
 <%= form_for [comment= Comment.new] do |f| %>
-<div class="comment-form emoji-picker-container ">
-	<%= f.text_field :content, placeholder: t("new_comment"), id: "comment_field_#{micropost.id}",class: "form-control td-comment", rows: 3, data: { emojiable: true }, style: 'display:none' %>
-	<%= f.hidden_field :micropost_id, :value =>  micropost.id %>
-	<%= f.hidden_field :user_id, :value =>  current_user.id %>
-</div>
-<%= f.submit t("post"), class: "btn btn-primary btn-1" %>
+  <div class="comment-form emoji-picker-container ">
+    <%= f.text_field :content, placeholder: t("new_comment"), id: "comment_field_#{micropost.id}", 
+     class: "form-control td-comment", rows: 3, data: { emojiable: true }, style: 'display:none' %>
+    <%= f.hidden_field :micropost_id, :value =>  micropost.id %>
+    <%= f.hidden_field :user_id, :value =>  current_user.id %>
+
+    <%= f.submit t("post"), class: "btn btn-primary" %>
+  </div>
+
+  <br/>
 <% end %>

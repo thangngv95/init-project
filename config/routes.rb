@@ -17,6 +17,7 @@ Rails.application.routes.draw do
       member do
         get :following, :followers
       end
+      collection { post :search, to: 'users#index' }
     end
 
     resources :microposts do 
