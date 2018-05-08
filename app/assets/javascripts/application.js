@@ -11,6 +11,7 @@
 // about supported directives.
 //
 //= require jquery
+//= require rails_emoji_picker
 //= require bootstrap
 //= require rails-ujs
 //= require turbolinks

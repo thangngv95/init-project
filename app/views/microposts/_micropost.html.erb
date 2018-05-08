@@ -8,8 +8,8 @@
         data: { confirm: t("sure") } %>
     <% end %>
   </span>
-  <span class="content">
-    <%= micropost.content %>
+  <span class="panel-body">
+    <%= content_with_emoji( micropost.content )%>
     <%= image_tag micropost.picture.url if micropost.picture? %>
   </span>
   <span class="vote">
@@ -25,7 +25,7 @@
 </li>
 <div>
   <span>
-  <div id="comments_<%=micropost.id %>">
+  <div id="comments-<%=micropost.id %>">
     <% if micropost.comments.any? %>
       <%= render micropost.comments %>
     <% end %>

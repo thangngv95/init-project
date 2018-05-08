@@ -198,6 +198,7 @@ en:
   post: "Posted"
   ago: "ago"
   new_comment: Add comment ...
+  post: "Comment"
 
   will_paginate:
     previous_label: "Previous"

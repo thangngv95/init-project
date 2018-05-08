@@ -165,6 +165,7 @@ vi:
   post: "Đăng bài"
   ago: "trước"
   new_comment: Bình luận ...
+  post: "Bình luận"
 
   will_paginate:
     previous_label: "Trang trước"

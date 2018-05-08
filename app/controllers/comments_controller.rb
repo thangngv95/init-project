@@ -9,7 +9,7 @@ class CommentsController < ApplicationController
 	  if @comment.save
 	    redirect_back(fallback_location: root_path)
 	  else
-	    render root_path
+	    redirect_to root_path
 	  end
 	end
 

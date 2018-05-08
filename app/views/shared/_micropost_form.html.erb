@@ -1,7 +1,9 @@
 <%= form_for micropost do |f| %>
   <%= render "shared/error_messages", object: f.object %>
   <div class="field">
-    <%= f.text_area :content,placeholder: t(".compose") %>
+  	<p class="emoji-picker-container">
+      <%= f.text_field :content,placeholder: t(".compose"), class: 'form-control', data: { emojiable: true } %>
+  	</p>
   </div>
   <%= f.submit t(".post"), class: "btn btn-primary" %>
   <span class="picture" >
